@@ -16,7 +16,7 @@ minutes="0"+minutes
 if(seconds<=9)
 seconds="0"+seconds
 //change font size here to your desire
-myclock="ÏÖÔÚµÄÊ±¼äÊÇ£º"+hours+":"+minutes+":"
+myclock="çŽ°åœ¨çš„æ—¶é—´æ˜¯ï¼š"+hours+":"+minutes+":"
 +seconds+" "+dn+"</b></font>"
 if(document.layers){document.layers.liveclock.document.write(myclock)
 document.layers.liveclock.document.close()
