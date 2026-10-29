@@ -10,7 +10,7 @@ function imgChange(id , act){
 	if(document.images){ document.images[id].src = eval("img."+ id + toggleKey[act] + ".src");}
 }
 
-// 图片变换设置 imgChange('img name' , 0)关闭 imgChange('img  name' , 1) 打开
+// 鍥剧墖鍙樻崲璁剧疆 imgChange('img name' , 0)鍏抽棴 imgChange('img  name' , 1) 鎵撳紑
 
  if(document.images){
 	img = new Object();
