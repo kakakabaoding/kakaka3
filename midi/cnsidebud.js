@@ -60,7 +60,7 @@ function mkList(u,t,s,f){
  if(objMmInfo == null){ objMmInfo=new Array(); idx=0;}
  else{ idx=objMmInfo.length;}
  if(u=="" || u==null){cu="mms://";}
- if(t=="" || t==null){ct="Î´Öª¸èÇú";}
+ if(t=="" || t==null){ct="æœªçŸ¥æ­Œæ›²";}
  if(f=="f" || f=="F"){cf="f";}
  else{cf="t"; intSelMmCnt=intSelMmCnt+1;}
 
@@ -161,8 +161,8 @@ function initExobud(){
  if(blnRndPlay){imgChange('pmode',1);}
  else{imgChange('pmode',0);}
  showTLab();
- disp1.innerHTML="²¥·ÅÆ÷ÒÑ×¼±¸¾ÍĞ÷Çëµã²¥·Å¼ü";
- if(blnStatusBar){window.status=('²¥·ÅÆ÷ÒÑ×¼±¸¾ÍĞ÷Çëµã²¥·Å¼ü');}
+ disp1.innerHTML="æ’­æ”¾å™¨å·²å‡†å¤‡å°±ç»ªè¯·ç‚¹æ’­æ”¾é”®";
+ if(blnStatusBar){window.status=('æ’­æ”¾å™¨å·²å‡†å¤‡å°±ç»ªè¯·ç‚¹æ’­æ”¾é”®');}
  if(blnAutoStart){startExobud();}
 
 }
@@ -186,7 +186,7 @@ function selMmPlay(idx){
  cActIdx=idx;
  var trknum=idx+1;
  var ctit =objMmInfo[idx].mmTit;
- if(ctit=="nAnT"){ctit="Title Author Î´Öª..."}
+ if(ctit=="nAnT"){ctit="Title Author æœªçŸ¥..."}
  if(blnUseSmi){Exobud.ClosedCaption.SAMIFileName = objMmInfo[idx].mmSmi;}
  Exobud.URL = objMmInfo[idx].mmUrl;
  cActTit="T"+ trknum + ". " + ctit;
@@ -209,7 +209,7 @@ function wmpStop(){
  mkSelAct();
  Exobud.controls.stop();
  Exobud.close();
- disp1.innerHTML="CnSide MP ²¥·ÅÒÑÍ£Ö¹";
+ disp1.innerHTML="CnSide MP æ’­æ”¾å·²åœæ­¢";
  if(blnStatusBar){window.status=('CnSide MP');return true;}
 }
 
@@ -328,11 +328,11 @@ function evtOSChg(f){
  if(f==8){capText.innerHTML="CnSide MP";}
  if(f==13){
 	var strTitle = Exobud.currentMedia.getItemInfo("title");
-	if(strTitle.length <=0){strTitle = "Î´Öª"}
+	if(strTitle.length <=0){strTitle = "æœªçŸ¥"}
 	var strAuthor = Exobud.currentMedia.getItemInfo("Author");
-	if(strAuthor.length <=0){strAuthor = "Î´Öª"}
+	if(strAuthor.length <=0){strAuthor = "æœªçŸ¥"}
 	var strCopy = Exobud.currentMedia.getItemInfo("Copyright");
-	if(strCopy.length <=0){strCopy = "Î´Öª"}
+	if(strCopy.length <=0){strCopy = "æœªçŸ¥"}
 	var strType = Exobud.currentMedia.getItemInfo("MediaType");
 	var strDur=Exobud.currentMedia.durationString;
 	var strUrl =Exobud.URL;
